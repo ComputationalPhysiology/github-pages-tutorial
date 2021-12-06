@@ -14,8 +14,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          python -m pip install pip --upgrade
-          python -m pip install pytest pytest-cov
+          python3 -m pip install pip --upgrade
+          python3 -m pip install pytest pytest-cov
       - name: Test with pytest
         run: |
-          python -m pytest test_laplace.py --cov=laplace --cov-report term-missing
+          python3 -m pytest test_laplace.py --cov=laplace --cov-report term-missing
