@@ -122,3 +122,4 @@ jobs:
       - name: Test with pytest
         run: |
           python -m pytest test_laplace.py --cov=laplace --cov-report term-missing
+```

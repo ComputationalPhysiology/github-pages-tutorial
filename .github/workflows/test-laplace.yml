@@ -1,0 +1,21 @@
+name: Test laplace
+
+on: [push]
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    container:
+      image: quay.io/fenicsproject/stable:latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          python -m pip install pip --upgrade
+          python -m pip install pytest pytest-cov
+      - name: Test with pytest
+        run: |
+          python -m pytest test_laplace.py --cov=laplace --cov-report term-missing
