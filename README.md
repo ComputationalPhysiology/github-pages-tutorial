@@ -1,5 +1,7 @@
 [![testing Caesar cipher](https://github.com/finsberg/2021-12-06-github-actions/actions/workflows/main.yml/badge.svg)](https://github.com/finsberg/2021-12-06-github-actions/actions/workflows/main.yml)
 
+[![Test laplace](https://github.com/finsberg/2021-12-06-github-actions/actions/workflows/test-laplace.yml/badge.svg)](https://github.com/finsberg/2021-12-06-github-actions/actions/workflows/test-laplace.yml)
+
 # GitHub actions
 
 An example repo for how to set up github actions. 
