@@ -3,7 +3,6 @@ import ceasar_cipher
 
 
 def test_rotate_string():
-
     assert ceasar_cipher.rotate_string("hello", 1) == "elloh"
 
 
