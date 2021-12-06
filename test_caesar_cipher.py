@@ -1,8 +1,11 @@
 import pytest
 import ceasar_cipher
+import sys
 
 
 def test_rotate_string():
+    if sys.version_info[1] == 7:
+        raise RuntimeError
     assert ceasar_cipher.rotate_string("hello", 1) == "elloh"
 
 
