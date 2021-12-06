@@ -1,7 +1,6 @@
 name: testing Caesar cipher # Name of the Ci
-name: testing Caesar cipher   # Name of the Ci
 
-on: [push] 
+on: [push]
 
 jobs:
   test:
