@@ -1,18 +1,22 @@
 name: testing Caesar cipher # Name of the Ci
+name: testing Caesar cipher   # Name of the Ci
 
-on: [push] # When to run the CI
+on: [push] 
 
 jobs:
-  test: # Name of job
-    name: Test on ubuntu with python 3.9
-    runs-on: ubuntu-latest # OS to run on
+  test:
+    name: Test on ubuntu with python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8, 3.9]
 
     steps:
-      - uses: actions/checkout@v2 # Pre-made action to check out repo
-      - name: Set up Python
-        uses: actions/setup-python@v2 # Pre-made action to set up python
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
         with:
-          python-version: 3.9
+          python-version: ${{ matrix.python-version }}
       - name: Install dependencies
         run: |
           python -m pip install pip --upgrade
