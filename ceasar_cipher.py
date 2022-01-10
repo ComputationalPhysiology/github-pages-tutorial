@@ -59,7 +59,25 @@ def create_shifted_alphabet(shift: int):
 
 
 def encrypt(msg: str, shift: int) -> str:
+    """Encrypt message
 
+    Parameters
+    ----------
+    msg : str
+        The message
+    shift : int
+        The shift
+
+    Returns
+    -------
+    str
+        Encrypted message
+
+    Raises
+    ------
+    TypeError
+        [description]
+    """
     if not isinstance(msg, str):
         raise TypeError(f"We can only encrypt string, got {type(msg)}")
 
