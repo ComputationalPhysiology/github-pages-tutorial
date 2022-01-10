@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="github-pages-tutorial" href="modules.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="laplace module" href="laplace.html" /><link rel="prev" title="github-pages-tutorial" href="modules.html" />
 
     <meta name="generator" content="sphinx-4.3.2, furo 2022.01.02"/>
-        <title>Github pages tutorial 0.1 documentation</title>
+        <title>ceasar_cipher module - Github pages tutorial 0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=df49af52631e7917044a9c21a57f7b83170a6dd0" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=fade93df149f7c5fedb3ff897f799dc7d283b420" />
@@ -123,7 +123,7 @@
       </label>
     </div>
     <div class="header-center">
-      <a href="#"><div class="brand">Github pages tutorial 0.1 documentation</div></a>
+      <a href="index.html"><div class="brand">Github pages tutorial 0.1 documentation</div></a>
     </div>
     <div class="header-right">
       <div class="theme-toggle-container theme-toggle-header">
@@ -134,7 +134,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -143,7 +143,7 @@
   <aside class="sidebar-drawer">
     <div class="sidebar-container">
       
-      <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
   
   
   <span class="sidebar-brand-text">Github pages tutorial 0.1 documentation</span>
@@ -155,9 +155,9 @@
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1 has-children"><a class="reference internal" href="modules.html">github-pages-tutorial</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="ceasar_cipher.html">ceasar_cipher module</a></li>
+<ul class="current">
+<li class="toctree-l1 current has-children"><a class="reference internal" href="modules.html">github-pages-tutorial</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">ceasar_cipher module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="laplace.html">laplace module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="test_caesar_cipher.html">test_caesar_cipher module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="test_laplace.html">test_laplace module</a></li>
@@ -183,35 +183,67 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main">
-          <section id="welcome-to-github-pages-tutorial-s-documentation">
-<h1>Welcome to Github pages tutorial’s documentation!<a class="headerlink" href="#welcome-to-github-pages-tutorial-s-documentation" title="Permalink to this headline">¶</a></h1>
-<p>This is an example of how to set up GitHub pages</p>
-<div class="toctree-wrapper compound">
-<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="modules.html">github-pages-tutorial</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ceasar_cipher.html">ceasar_cipher module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="laplace.html">laplace module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="test_caesar_cipher.html">test_caesar_cipher module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="test_laplace.html">test_laplace module</a></li>
-</ul>
-</li>
-</ul>
+          <section id="module-ceasar_cipher">
+<span id="ceasar-cipher-module"></span><h1>ceasar_cipher module<a class="headerlink" href="#module-ceasar_cipher" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="ceasar_cipher.create_shifted_alphabet">
+<span class="sig-prename descclassname"><span class="pre">ceasar_cipher.</span></span><span class="sig-name descname"><span class="pre">create_shifted_alphabet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/ceasar_cipher.html#create_shifted_alphabet"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ceasar_cipher.create_shifted_alphabet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a dictionary where the keys are
+the original letters in the alphabet and the
+values are the corresponding letters in the
+shifted alphabet</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>shift</strong> (<em>int</em>) – The shift</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The dictioary with the shifted alphabet</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;</span> <span class="n">shifted_alphabet</span> <span class="o">=</span> <span class="n">create_shifted_alphabet</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;</span> <span class="n">shifted_alphabet</span><span class="p">[</span><span class="s2">"d"</span><span class="p">]</span>
+<span class="s2">"f"</span>
+</pre></div>
 </div>
-</section>
-<section id="indices-and-tables">
-<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
-<ul class="simple">
-<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
-<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
-<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="ceasar_cipher.encrypt">
+<span class="sig-prename descclassname"><span class="pre">ceasar_cipher.</span></span><span class="sig-name descname"><span class="pre">encrypt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/ceasar_cipher.html#encrypt"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ceasar_cipher.encrypt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="py function">
+<dt class="sig sig-object py" id="ceasar_cipher.rotate_string">
+<span class="sig-prename descclassname"><span class="pre">ceasar_cipher.</span></span><span class="sig-name descname"><span class="pre">rotate_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">→</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/ceasar_cipher.html#rotate_string"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#ceasar_cipher.rotate_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rotate string with a given shift</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>msg</strong> (<em>str</em>) – The string you want to roate</p></li>
+<li><p><strong>shift</strong> (<em>int</em>) – The shift</p></li>
 </ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The rotated string</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;</span> <span class="n">rotated_string</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="s2">"ohell"</span>
+</pre></div>
+</div>
+</dd></dl>
 </section>
 
         </article>
@@ -219,23 +251,33 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="modules.html">
+          <a class="next-page" href="laplace.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">github-pages-tutorial</div>
+                <div class="title">laplace module</div>
               </div>
               <svg><use href="#svg-arrow-right"></use></svg>
             </a>
-          
+          <a class="prev-page" href="modules.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">github-pages-tutorial</div>
+                
+              </div>
+            </a>
         </div>
 
         <div class="related-information">
               Copyright &#169; 2022, Henrik Finsberg |
           Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
           <a href="https://github.com/pradyunsg/furo">Furo theme</a>.
-            | <a class="muted-link" href="_sources/index.rst.txt"
+            | <a class="muted-link" href="_sources/ceasar_cipher.rst.txt"
                rel="nofollow">
               Show Source
             </a>
@@ -243,25 +285,8 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer">
+    <aside class="toc-drawer no-toc">
       
-      
-      <div class="toc-sticky toc-scroll">
-        <div class="toc-title-container">
-          <span class="toc-title">
-            Contents
-          </span>
-        </div>
-        <div class="toc-tree-container">
-          <div class="toc-tree">
-            <ul>
-<li><a class="reference internal" href="#">Welcome to Github pages tutorial’s documentation!</a></li>
-<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
-</ul>
-
-          </div>
-        </div>
-      </div>
       
       
     </aside>

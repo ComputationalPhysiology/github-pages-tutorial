@@ -1,0 +1,7 @@
+laplace module
+==============
+
+.. automodule:: laplace
+   :members:
+   :undoc-members:
+   :show-inheritance:

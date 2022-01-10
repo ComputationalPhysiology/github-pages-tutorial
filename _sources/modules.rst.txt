@@ -1,0 +1,10 @@
+github-pages-tutorial
+=====================
+
+.. toctree::
+   :maxdepth: 4
+
+   ceasar_cipher
+   laplace
+   test_caesar_cipher
+   test_laplace
